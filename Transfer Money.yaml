@@ -1,0 +1,19 @@
+appId: com.fastpay.agent
+---
+- tapOn:
+    id: "menuTransferMoneyIcon"
+- tapOn: Mobile Number
+- inputText: ${Agent}
+- pressKey: back
+- tapOn:
+    id: "tvMoneyAmount"
+- inputText: "290"
+- tapOn:
+    id: "confirmBtn"
+- tapOn: PROCEED
+- tapOn:
+    id: "editTextPin1"
+- inputText: "1234"
+- tapOn: VIEW INVOICE
+- assertVisible:
+    id: "nav_host_dashboard"

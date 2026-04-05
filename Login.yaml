@@ -1,0 +1,20 @@
+appId: com.fastpay.agent
+---
+- assertVisible: FastpayAgent
+- tapOn: "FastpayAgent"
+- waitForAnimationToEnd
+- assertVisible: Mobile Number
+# Mobile number and password field
+- tapOn: Mobile Number
+- longPressOn: 100 000 0077
+- tapOn:
+    id: floating_toolbar_menu_item_text
+    index: 1
+- inputText: ${User}
+- tapOn: Enter your password
+- inputText: ${Password}
+- pressKey: back
+
+# Log In button
+- tapOn: LOGIN
+

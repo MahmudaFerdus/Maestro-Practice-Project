@@ -1,0 +1,7 @@
+appId: com.fastpay.agent
+---
+- runFlow: Login.yaml
+
+- runFlow: "Sell Balance.yaml"
+- runFlow: "Transfer Money.yaml"
+- stopApp

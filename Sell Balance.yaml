@@ -1,0 +1,29 @@
+appId: com.fastpay.agent
+---
+- tapOn: Sell Balance
+
+- tapOn: Mobile Number
+- inputText: ${Customer}
+- pressKey: back
+- doubleTapOn: "0"
+- inputText: "250"
+- pressKey: back
+- tapOn: CONFIRM
+- tapOn: PROCEED
+
+# Enter PIN
+- waitForAnimationToEnd
+- tapOn:
+    id: "editTextPin1"
+- inputText: "1234"
+
+# View Invoice
+- waitForAnimationToEnd
+- tapOn: VIEW INVOICE
+
+# Assert Dashboard
+- assertVisible:
+    id: "nav_host_dashboard"
+
+- tapOn:
+    id: ivHome
