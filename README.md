@@ -74,7 +74,7 @@ powershell -ExecutionPolicy Bypass -File "C:\Maestro Project\Practice Project\Fa
 ✅ Saves report in reports/ folder with timestamp
 
 📊 Sample Report Output
-text
+
 
 ========================================
        TEST RESULTS SUMMARY
