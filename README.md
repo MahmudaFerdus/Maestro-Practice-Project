@@ -53,6 +53,7 @@ Verify everything:
 maestro -v
 adb devices
 ⚙️ Setup Credentials
+
 Open run_and_report.ps1 and update:
 
 PowerShell
@@ -90,7 +91,7 @@ text
 
 ## 📌 Quick Rules
 
-<div align="center">
+
 
 | &nbsp; | ✅ **DO** | ❌ **DON'T** |
 |:------:|-----------|--------------|
